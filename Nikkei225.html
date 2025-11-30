@@ -4,10 +4,27 @@
 <meta charset="UTF-8">
 <title>日経225 + VI（直近6か月）</title>
 <style>
-table{border-collapse:collapse;width:100%;font-size:14px;}
-th,td{border:1px solid #ccc;padding:4px;text-align:right;}
-th{background:#f4f4f4;}
-tr:nth-child(even){background:#fafafa;}
+table{
+    border-collapse: collapse;
+    width: auto;          /* 画面幅いっぱいにせず必要最小限にする */
+    margin: auto;         /* 中央揃え */
+    font-size: 14px;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 4px;
+    text-align: right;
+    width: 90px;          /* 各セル幅を固定し、横幅をコンパクトに */
+}
+
+th{
+    background: #f4f4f4;  /* 既存のヘッダー背景色を保持 */
+}
+
+tr:nth-child(even){
+    background: #fafafa;  /* 既存の交互行背景も保持 */
+}
 </style>
 </head>
 <body>
